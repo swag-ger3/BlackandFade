@@ -1,84 +1,108 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Barber Shop</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Black & Fade</title>
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header -->
-  <header class="header">
-    <div class="container">
-      <h1 class="logo">Black & Fade</h1>
-      <nav class="nav">
-        <a href="#home">Accueil</a>
-        <a href="#about">À propos</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
+  <header>
+    <h1>Black & Fade</h1>
+    <p></p>
   </header>
-
-  <section id="home" class="hero">
-    <div class="container">
-      <h2>Du style qui fait la différence</h2>
+  
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#about">À Propos</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  
+  <div class="container">
+    <div id="accueil" class="hero">
+     <h2>Du style qui fait la différence</h2>
       <p>Coiffure de barbe, coupe de cheveux et soins professionnels.</p>
-      <a href="#contact" class="btn">Prendre rendez‑vous</a>
+      <p>Nous transformons les déchets plastiques en carburant diesel durable et écologique.</p>
     </div>
-  </section>
-
-  <section id="about" class="section">
-    <div class="container">
-      <h2>À propos de nous</h2>
+    
+    <div id="about" class="section">
+    <h2>À propos de nous</h2>
       <p>
         Depuis 2018, nous offrons des coupes propres, précises et stylées.  
         Notre équipe de barbiers passionnés se met à votre service pour  
         transformer votre look en véritable signature.
       </p>
-    </div>
-  </section>
-
-  <section id="services" class="section">
-     <h2>Nos services</h2>
-        <div class="container">
+      </div>
+    
+    
+    <div id="services" class="section">
+      <h2>Nos Services</h2>
       <div class="services-list">
-        <img src="skin fade.jpg" alt="Coupe Classique"
-        <div class="service-item">
-           <h3>Coupe classique</h3>
+
+         <div class="service-item">
+          <img src="classique.jpg" alt="Coupe Classique">
+        <div class="content">
+          <h3>Coupe classique</h3>
           <p>Une coupe nette qui met en valeur votre visage.</p>
-        </div> 
-      </div> 
-      <div class="services-list">     
-        <div class="service-item">   
-          <h3>Barbe stylée</h3>
-          <p>Barbe propre et bien définie, avec dessin des contours.</p>
-        </div>
-        </div>
-      <div class="services-list">
+         </div>
+          </div>
+
         <div class="service-item">
-          <h3>Coloration</h3>
-          <p>Changement de couleur naturel ou audacieux.</p>
+          <img src="barbe.jpg" alt="Barbe stylée">
+          <div class="content">
+            <h3>Barbe stylée</h3>
+            <p>Barbe propre et bien définie, avec dessin des contours.</p>
+          </div>
         </div>
+        <div class="service-item">
+          <img src="coloration.jpg" alt="Coloration">
+          <div class="content">
+            <h3>Coloration</h3>
+            <p>Transformez votre apparence avec nos services de coloration professionnelle.</p>
+          </div>
         </div>
-        </div>
-  </section>
-
-
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contactez‑nous</h2>
-      <p>Adresse : 13, Rue Depestre, Clercine 8, Haïti</p>
-      <p>Téléphone : +509 36 12 34 56</p>
-      <p>Email : blackandfade@gmail.com</p>
+      </div>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2026 Black & Fade Barber Shop. Tous droits réservés.</p>
+    
+    <div id="contact" class="section">
+      <h2>Nous Contacter</h2>
+      <div class="gallery">
+        <div class="service-item">
+          <div class="content">
+            <h3>Informations</h3>
+            <p><strong>Email:</strong> blackandfade@gmail.com</p>
+            <p><strong>Téléphone:</strong> +509 36 12 34 56</p>
+            <p><strong>Adresse:</strong> #13, Rue Depestre, Clercine 8, Haïti</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="content">
+            <form class="contact-form">
+              <div class="form-group">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button type="submit" class="btn">Envoyer</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+  
+  <footer>
+    <p>&copy; 2026 Black & Fade. Tous droits réservés.</p>
+    <p>Plus qu’une coupe, une identité..</p>
   </footer>
 </body>
 </html>
